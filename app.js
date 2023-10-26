@@ -11,12 +11,12 @@ const main = async() =>{
    do {
       opt = await inquirerMenu();
       //console.log({ opt });
-      switch ('opt') {
+      switch (opt) {
          case '1':
             //crear opcion
             const desc = await leerInput('Descripción:');
-            console.log(desc);
-            //tareas.crearTarea(desc);
+            //console.log(desc);
+             tareas.crearTarea(desc);
             break;
          case '2':
                //listar las opciones
@@ -24,8 +24,7 @@ const main = async() =>{
                
                break;
       
-         default:
-            break;
+         
       }
       
       //if(opt !=='0') await pausa();
